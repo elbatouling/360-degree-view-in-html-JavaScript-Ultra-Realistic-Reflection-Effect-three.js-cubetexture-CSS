@@ -21,7 +21,7 @@
             renderer.setSize(window.innerWidth,window.innerHeight);
             document.body.appendChild(renderer.domElement);
             let controls = new THREE.OrbitControls(camera,renderer.domElement);
-            controls.enableZoom = false;
+            controls.enableZoom = true;
 
             let urls = [
                 'posx.jpg','negx.jpg',
@@ -53,4 +53,5 @@
         init();
     </script>
 </body>
+
 </html>
